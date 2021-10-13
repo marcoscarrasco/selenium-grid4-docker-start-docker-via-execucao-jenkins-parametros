@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="classes" thread-count="6">
+	<test name="Smoke">
+		<classes> 
+			<class name="br.com.sempreit.cenarios.Cenario1_Chrome" />
+			<class name="br.com.sempreit.cenarios.Cenario1_Firefox" />
+			<class name="br.com.sempreit.cenarios.Cenario1_Edge" />
+			<class name="br.com.sempreit.cenarios.Cenario2_Chrome" />
+			<class name="br.com.sempreit.cenarios.Cenario2_Firefox" />
+			<class name="br.com.sempreit.cenarios.Cenario2_Edge" />
+			<class name="br.com.sempreit.cenarios.Cenario3_Chrome" />
+			<class name="br.com.sempreit.cenarios.Cenario3_Firefox" />
+			<class name="br.com.sempreit.cenarios.Cenario3_Edge" />
+			<class name="br.com.sempreit.cenarios.Cenario4_Chrome" />
+			<class name="br.com.sempreit.cenarios.Cenario4_Firefox" />
+			<class name="br.com.sempreit.cenarios.Cenario4_Edge" />
+			<class name="br.com.sempreit.cenarios.Cenario5_Chrome" />
+			<class name="br.com.sempreit.cenarios.Cenario5_Firefox" />
+			<class name="br.com.sempreit.cenarios.Cenario5_Edge" />
+		</classes>
+	</test>
+</suite>

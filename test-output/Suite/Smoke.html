@@ -1,0 +1,154 @@
+<html>
+<head>
+<title>TestNG:  Smoke</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Smoke</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>15/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Oct 12 00:19:51 BRT 2021</td>
+</tr>
+<tr><td>Total time:</td><td>99 seconds (99180 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='br.com.maven.comofazer.maven.Cenario1_Chrome.executorCenario()'><b>executorCenario</b><br>Test class: br.com.maven.comofazer.maven.Cenario1_Chrome</td>
+<td></td>
+<td>26</td>
+<td>br.com.maven.comofazer.maven.Cenario1_Chrome@548e7350</td></tr>
+<tr>
+<td title='br.com.maven.comofazer.maven.Cenario2_Chrome.executorCenario()'><b>executorCenario</b><br>Test class: br.com.maven.comofazer.maven.Cenario2_Chrome</td>
+<td></td>
+<td>30</td>
+<td>br.com.maven.comofazer.maven.Cenario2_Chrome@5442a311</td></tr>
+<tr>
+<td title='br.com.maven.comofazer.maven.Cenario1_Edge.executorCenario()'><b>executorCenario</b><br>Test class: br.com.maven.comofazer.maven.Cenario1_Edge</td>
+<td></td>
+<td>30</td>
+<td>br.com.maven.comofazer.maven.Cenario1_Edge@4667ae56</td></tr>
+<tr>
+<td title='br.com.maven.comofazer.maven.Cenario2_Firefox.executorCenario()'><b>executorCenario</b><br>Test class: br.com.maven.comofazer.maven.Cenario2_Firefox</td>
+<td></td>
+<td>42</td>
+<td>br.com.maven.comofazer.maven.Cenario2_Firefox@53b32d7</td></tr>
+<tr>
+<td title='br.com.maven.comofazer.maven.Cenario2_Edge.executorCenario()'><b>executorCenario</b><br>Test class: br.com.maven.comofazer.maven.Cenario2_Edge</td>
+<td></td>
+<td>43</td>
+<td>br.com.maven.comofazer.maven.Cenario2_Edge@5622fdf</td></tr>
+<tr>
+<td title='br.com.maven.comofazer.maven.Cenario1_Firefox.executorCenario()'><b>executorCenario</b><br>Test class: br.com.maven.comofazer.maven.Cenario1_Firefox</td>
+<td></td>
+<td>43</td>
+<td>br.com.maven.comofazer.maven.Cenario1_Firefox@39c0f4a</td></tr>
+<tr>
+<td title='br.com.maven.comofazer.maven.Cenario3_Chrome.executorCenario()'><b>executorCenario</b><br>Test class: br.com.maven.comofazer.maven.Cenario3_Chrome</td>
+<td></td>
+<td>21</td>
+<td>br.com.maven.comofazer.maven.Cenario3_Chrome@42e26948</td></tr>
+<tr>
+<td title='br.com.maven.comofazer.maven.Cenario3_Edge.executorCenario()'><b>executorCenario</b><br>Test class: br.com.maven.comofazer.maven.Cenario3_Edge</td>
+<td></td>
+<td>20</td>
+<td>br.com.maven.comofazer.maven.Cenario3_Edge@1a968a59</td></tr>
+<tr>
+<td title='br.com.maven.comofazer.maven.Cenario4_Chrome.executorCenario()'><b>executorCenario</b><br>Test class: br.com.maven.comofazer.maven.Cenario4_Chrome</td>
+<td></td>
+<td>14</td>
+<td>br.com.maven.comofazer.maven.Cenario4_Chrome@1794d431</td></tr>
+<tr>
+<td title='br.com.maven.comofazer.maven.Cenario5_Chrome.executorCenario()'><b>executorCenario</b><br>Test class: br.com.maven.comofazer.maven.Cenario5_Chrome</td>
+<td></td>
+<td>17</td>
+<td>br.com.maven.comofazer.maven.Cenario5_Chrome@57baeedf</td></tr>
+<tr>
+<td title='br.com.maven.comofazer.maven.Cenario4_Edge.executorCenario()'><b>executorCenario</b><br>Test class: br.com.maven.comofazer.maven.Cenario4_Edge</td>
+<td></td>
+<td>22</td>
+<td>br.com.maven.comofazer.maven.Cenario4_Edge@77cd7a0</td></tr>
+<tr>
+<td title='br.com.maven.comofazer.maven.Cenario4_Firefox.executorCenario()'><b>executorCenario</b><br>Test class: br.com.maven.comofazer.maven.Cenario4_Firefox</td>
+<td></td>
+<td>33</td>
+<td>br.com.maven.comofazer.maven.Cenario4_Firefox@7d9d1a19</td></tr>
+<tr>
+<td title='br.com.maven.comofazer.maven.Cenario3_Firefox.executorCenario()'><b>executorCenario</b><br>Test class: br.com.maven.comofazer.maven.Cenario3_Firefox</td>
+<td></td>
+<td>48</td>
+<td>br.com.maven.comofazer.maven.Cenario3_Firefox@4883b407</td></tr>
+<tr>
+<td title='br.com.maven.comofazer.maven.Cenario5_Edge.executorCenario()'><b>executorCenario</b><br>Test class: br.com.maven.comofazer.maven.Cenario5_Edge</td>
+<td></td>
+<td>21</td>
+<td>br.com.maven.comofazer.maven.Cenario5_Edge@3e6fa38a</td></tr>
+<tr>
+<td title='br.com.maven.comofazer.maven.Cenario5_Firefox.executorCenario()'><b>executorCenario</b><br>Test class: br.com.maven.comofazer.maven.Cenario5_Firefox</td>
+<td></td>
+<td>46</td>
+<td>br.com.maven.comofazer.maven.Cenario5_Firefox@343f4d3d</td></tr>
+</table><p>
+</body>
+</html>
