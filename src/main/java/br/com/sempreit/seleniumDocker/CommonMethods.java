@@ -49,9 +49,7 @@ public class CommonMethods {
         Process p;
         
         try {
-            p = Runtime.getRuntime().exec("vi docker-compose.yaml");
-            
-            p = Runtime.getRuntime().exec("ls");
+            p = Runtime.getRuntime().exec("docker-compose up");
             BufferedReader br = new BufferedReader(
                 new InputStreamReader(p.getInputStream()));
             while ((s = br.readLine()) != null)
