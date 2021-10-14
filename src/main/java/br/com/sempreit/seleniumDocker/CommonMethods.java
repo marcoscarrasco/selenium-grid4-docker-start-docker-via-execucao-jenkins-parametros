@@ -38,22 +38,11 @@ public class CommonMethods {
 					}
 				}	
 			}else {
-				scanner = new Scanner(Runtime.getRuntime().exec(new String[] {"/bin/bash", "-l", "-c", "cd \""+path+"\" && "+command}).getInputStream());
-				String linha;
-				while (true) {
-					linha = scanner.nextLine();
-					if (linha.contains("Registered a node") || linha.contains("Node has been added")) { 
-						Thread.sleep(5000);
-						System.out.println("Containers inicializados: " + linha);
-						break; 
-					}else if (linha.contains("Removing selenium-hub")){
-						Thread.sleep(5000);
-						System.out.println("Containers n�o est�o mais em execu��o: " + linha);
-						break; 
-					}
-					
-				}
-				
+				System.out.println("TESTE NO LINUX!!!!!!!!!!!!!!!");
+				System.out.println("path:" + path);
+				System.out.println("command:" + command);
+				System.out.println(new String[] {"/bin/bash", "-l", "-c", "cd "+path+"/ && "+command});
+				scanner = new Scanner(Runtime.getRuntime().exec(new String[] {"/bin/bash", "-l", "-c", "cd "+path+"/ && "+command}).getInputStream());
 			}
 					
 		} catch (Exception e) {
