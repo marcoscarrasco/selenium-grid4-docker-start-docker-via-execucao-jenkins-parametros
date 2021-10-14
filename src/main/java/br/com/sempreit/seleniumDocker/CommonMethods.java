@@ -47,7 +47,10 @@ public class CommonMethods {
 				
 				System.out.println(new String[] {"/bin/bash", "-l", "-c", "cd "+path+"/ && "+command});
 				scanner = new Scanner(Runtime.getRuntime().exec(new String[] {"/bin/bash", "-l", "-c",  }).getInputStream());
-
+				
+				System.out.println("Esperando 30 segundos !!!!!!!!");
+				Thread.sleep(30000);
+				System.out.println("Terminou a espera!!!!!!!!");
 			}
 			
 		} catch (Exception e) {
