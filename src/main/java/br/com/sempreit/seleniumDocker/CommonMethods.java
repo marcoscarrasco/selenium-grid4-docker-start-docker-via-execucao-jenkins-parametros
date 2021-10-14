@@ -13,10 +13,9 @@ public class CommonMethods {
 			
 			String os = System.getProperty("os.name");
 			String path = System.getProperty("user.dir");
-			ProcessBuilder builder = null;
 			
 			if(os.startsWith("Windows")) {
-				builder = new ProcessBuilder("cmd.exe", "/c", "cd \""+path+"\" && "+command);
+				ProcessBuilder builder = new ProcessBuilder("cmd.exe", "/c", "cd \""+path+"\" && "+command);
 				builder.redirectErrorStream(true);
 				Process p = builder.start();
 				BufferedReader r = new BufferedReader(new InputStreamReader(p.getInputStream()));
@@ -44,7 +43,8 @@ public class CommonMethods {
 		        
 		        System.out.println("EXECUCAO LINUX");
 		        System.out.println("CAMINHO: " + "cd " + path + " && " + command);			
-		        p = Runtime.getRuntime().exec("cd " + path + " && " + command);
+//		        p = Runtime.getRuntime().exec("cd " + path + " && " + command);
+		        p = Runtime.getRuntime().exec("cd /var/lib/jenkins/workspace/execucao-grid4-docker-jenkins-com-parametros && docker-compose up");
 		        
 		        
 	            BufferedReader br = new BufferedReader(
