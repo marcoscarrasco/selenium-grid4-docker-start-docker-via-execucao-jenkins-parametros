@@ -47,6 +47,9 @@ public class CommonMethods {
 
 		String s;
         Process p;
+        
+		String s2;
+        Process p2;
         try {
             p = Runtime.getRuntime().exec("ls -aF");
             BufferedReader br = new BufferedReader(
@@ -56,6 +59,17 @@ public class CommonMethods {
             p.waitFor();
             System.out.println ("exit: " + p.exitValue());
             p.destroy();
+            
+            
+            p2 = Runtime.getRuntime().exec("docker-compose up");
+            BufferedReader br2 = new BufferedReader(
+                new InputStreamReader(p2.getInputStream()));
+            while ((s2 = br2.readLine()) != null)
+                System.out.println("line: " + s2);
+            p2.waitFor();
+            System.out.println ("exit: " + p2.exitValue());
+            p2.destroy();
+            
         } catch (Exception e) {}
 		
 	}
