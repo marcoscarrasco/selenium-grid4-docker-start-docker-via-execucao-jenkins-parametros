@@ -41,13 +41,18 @@ public class CommonMethods {
 				System.out.println("TESTE NO LINUX!!!!!!!!!!!!!!!");
 				System.out.println("path:" + path);
 				System.out.println("command:" + command);
+				System.out.println("cd " + path + " && " + command);
+				System.out.println(System.getProperty("user.dir"));
+				
+				
 				System.out.println(new String[] {"/bin/bash", "-l", "-c", "cd "+path+"/ && "+command});
-				scanner = new Scanner(Runtime.getRuntime().exec(new String[] {"/bin/bash", "-l", "-c", "cd "+path+"/ && "+command}).getInputStream());
+				scanner = new Scanner(Runtime.getRuntime().exec(new String[] {"/bin/bash", "-l", "-c",  }).getInputStream());
+
 			}
-					
+			
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-
+		
 	}
 }
