@@ -44,8 +44,7 @@ public class CommonMethods {
 				System.out.println("cd " + path + " && " + command);
 				System.out.println(System.getProperty("user.dir"));
 				
-				scanner = new Scanner(Runtime.getRuntime().exec(new String[] {"/bin/bash", "-l", "-c", "cd " + path}).getInputStream());
-				scanner = new Scanner(Runtime.getRuntime().exec(new String[] {"/bin/bash", "-l", "-c", command }).getInputStream());
+				scanner = new Scanner(Runtime.getRuntime().exec(new String[] {"/bin/bash", "-l", "-c", "cd " + path + " && " + command}).getInputStream());
 				
 				System.out.println("Esperando 30 segundos !!!!!!!!");
 				Thread.sleep(30000);
