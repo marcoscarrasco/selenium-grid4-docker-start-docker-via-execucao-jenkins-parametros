@@ -43,8 +43,8 @@ public class CommonMethods {
 		        Process p;
 		        
 		        System.out.println("EXECUCAO LINUX");
-		        System.out.println("CAMINHO: " + "cd" + path + " && " + command);			
-		        p = Runtime.getRuntime().exec("cd" + path + " && " + command);
+		        System.out.println("CAMINHO: " + "cd " + path + " && " + command);			
+		        p = Runtime.getRuntime().exec("cd " + path + " && " + command);
 		        
 		        
 	            BufferedReader br = new BufferedReader(
