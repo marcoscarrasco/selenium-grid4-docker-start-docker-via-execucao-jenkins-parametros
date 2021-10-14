@@ -1,5 +1,13 @@
 version: "3"
 services:
+  selenium-hub:
+    image: selenium/hub:4.0.0-rc-2-20210930
+    container_name: selenium-hub
+    ports:
+      - "4442:4442"
+      - "4443:4443"
+      - "4444:4444"
+
   chrome:
     image: selenium/node-chrome:4.0.0-rc-2-20210930
     shm_size: 2gb
@@ -25,7 +33,7 @@ services:
       - SE_EVENT_BUS_PUBLISH_PORT=4442
       - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
       - SE_NODE_OVERRIDE_MAX_SESSIONS=true
-      - SE_NODE_MAX_SESSIONS=2
+      - SE_NODE_MAX_SESSIONS=3
       - SE_NODE_GRID_URL=http://localhost:4444
     ports:
       - "6901:5900"
@@ -44,11 +52,3 @@ services:
       - SE_NODE_GRID_URL=http://localhost:4444
     ports:
       - "6902:5900"
-
-  selenium-hub:
-    image: selenium/hub:4.0.0-rc-2-20210930
-    container_name: selenium-hub
-    ports:
-      - "4442:4442"
-      - "4443:4443"
-      - "4444:4444"

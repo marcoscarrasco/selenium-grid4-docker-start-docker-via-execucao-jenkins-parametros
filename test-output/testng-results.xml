@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="15" passed="15">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="111618" started-at="2021-10-14T15:16:16Z" finished-at="2021-10-14T15:18:07Z">
+    <groups>
+    </groups>
+    <test name="Smoke" duration-ms="111618" started-at="2021-10-14T15:16:16Z" finished-at="2021-10-14T15:18:07Z">
+      <class name="br.com.sempreit.cenarios.Cenario1_Firefox">
+        <test-method status="PASS" signature="executorCenario()[pri:0, instance:br.com.sempreit.cenarios.Cenario1_Firefox@39c0f4a]" name="executorCenario" duration-ms="37925" started-at="2021-10-14T12:16:16Z" finished-at="2021-10-14T12:16:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- executorCenario -->
+        <test-method status="PASS" signature="fecharNavegador()[pri:0, instance:br.com.sempreit.cenarios.Cenario1_Firefox@39c0f4a]" name="fecharNavegador" is-config="true" duration-ms="3357" started-at="2021-10-14T12:16:54Z" finished-at="2021-10-14T12:16:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fecharNavegador -->
+      </class> <!-- br.com.sempreit.cenarios.Cenario1_Firefox -->
+      <class name="br.com.sempreit.cenarios.Cenario4_Edge">
+        <test-method status="PASS" signature="executorCenario()[pri:0, instance:br.com.sempreit.cenarios.Cenario4_Edge@77cd7a0]" name="executorCenario" duration-ms="23906" started-at="2021-10-14T12:17:24Z" finished-at="2021-10-14T12:17:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- executorCenario -->
+        <test-method status="PASS" signature="fecharNavegador()[pri:0, instance:br.com.sempreit.cenarios.Cenario4_Edge@77cd7a0]" name="fecharNavegador" is-config="true" duration-ms="848" started-at="2021-10-14T12:17:48Z" finished-at="2021-10-14T12:17:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fecharNavegador -->
+      </class> <!-- br.com.sempreit.cenarios.Cenario4_Edge -->
+      <class name="br.com.sempreit.cenarios.Cenario5_Firefox">
+        <test-method status="PASS" signature="executorCenario()[pri:0, instance:br.com.sempreit.cenarios.Cenario5_Firefox@343f4d3d]" name="executorCenario" duration-ms="29889" started-at="2021-10-14T12:17:32Z" finished-at="2021-10-14T12:18:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- executorCenario -->
+        <test-method status="PASS" signature="fecharNavegador()[pri:0, instance:br.com.sempreit.cenarios.Cenario5_Firefox@343f4d3d]" name="fecharNavegador" is-config="true" duration-ms="2225" started-at="2021-10-14T12:18:02Z" finished-at="2021-10-14T12:18:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fecharNavegador -->
+      </class> <!-- br.com.sempreit.cenarios.Cenario5_Firefox -->
+      <class name="br.com.sempreit.cenarios.Cenario5_Chrome">
+        <test-method status="PASS" signature="executorCenario()[pri:0, instance:br.com.sempreit.cenarios.Cenario5_Chrome@57baeedf]" name="executorCenario" duration-ms="19542" started-at="2021-10-14T12:17:31Z" finished-at="2021-10-14T12:17:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- executorCenario -->
+        <test-method status="PASS" signature="fecharNavegador()[pri:0, instance:br.com.sempreit.cenarios.Cenario5_Chrome@57baeedf]" name="fecharNavegador" is-config="true" duration-ms="702" started-at="2021-10-14T12:17:51Z" finished-at="2021-10-14T12:17:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fecharNavegador -->
+      </class> <!-- br.com.sempreit.cenarios.Cenario5_Chrome -->
+      <class name="br.com.sempreit.cenarios.Cenario2_Firefox">
+        <test-method status="PASS" signature="executorCenario()[pri:0, instance:br.com.sempreit.cenarios.Cenario2_Firefox@53b32d7]" name="executorCenario" duration-ms="31654" started-at="2021-10-14T12:16:41Z" finished-at="2021-10-14T12:17:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- executorCenario -->
+        <test-method status="PASS" signature="fecharNavegador()[pri:0, instance:br.com.sempreit.cenarios.Cenario2_Firefox@53b32d7]" name="fecharNavegador" is-config="true" duration-ms="3736" started-at="2021-10-14T12:17:13Z" finished-at="2021-10-14T12:17:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fecharNavegador -->
+      </class> <!-- br.com.sempreit.cenarios.Cenario2_Firefox -->
+      <class name="br.com.sempreit.cenarios.Cenario2_Edge">
+        <test-method status="PASS" signature="executorCenario()[pri:0, instance:br.com.sempreit.cenarios.Cenario2_Edge@5622fdf]" name="executorCenario" duration-ms="21927" started-at="2021-10-14T12:16:41Z" finished-at="2021-10-14T12:17:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- executorCenario -->
+        <test-method status="PASS" signature="fecharNavegador()[pri:0, instance:br.com.sempreit.cenarios.Cenario2_Edge@5622fdf]" name="fecharNavegador" is-config="true" duration-ms="297" started-at="2021-10-14T12:17:03Z" finished-at="2021-10-14T12:17:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fecharNavegador -->
+      </class> <!-- br.com.sempreit.cenarios.Cenario2_Edge -->
+      <class name="br.com.sempreit.cenarios.Cenario5_Edge">
+        <test-method status="PASS" signature="startContainer()[pri:0, instance:br.com.sempreit.cenarios.Cenario5_Edge@3e6fa38a]" name="startContainer" is-config="true" duration-ms="7380" started-at="2021-10-14T12:16:08Z" finished-at="2021-10-14T12:16:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startContainer -->
+        <test-method status="PASS" signature="executorCenario()[pri:0, instance:br.com.sempreit.cenarios.Cenario5_Edge@3e6fa38a]" name="executorCenario" duration-ms="22625" started-at="2021-10-14T12:17:44Z" finished-at="2021-10-14T12:18:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- executorCenario -->
+        <test-method status="PASS" signature="fecharNavegador()[pri:0, instance:br.com.sempreit.cenarios.Cenario5_Edge@3e6fa38a]" name="fecharNavegador" is-config="true" duration-ms="278" started-at="2021-10-14T12:18:07Z" finished-at="2021-10-14T12:18:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fecharNavegador -->
+        <test-method status="PASS" signature="stopContainer()[pri:0, instance:br.com.sempreit.cenarios.Cenario5_Edge@3e6fa38a]" name="stopContainer" is-config="true" duration-ms="16096" started-at="2021-10-14T12:18:07Z" finished-at="2021-10-14T12:18:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopContainer -->
+      </class> <!-- br.com.sempreit.cenarios.Cenario5_Edge -->
+      <class name="br.com.sempreit.cenarios.Cenario4_Firefox">
+        <test-method status="PASS" signature="executorCenario()[pri:0, instance:br.com.sempreit.cenarios.Cenario4_Firefox@7d9d1a19]" name="executorCenario" duration-ms="24876" started-at="2021-10-14T12:17:16Z" finished-at="2021-10-14T12:17:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- executorCenario -->
+        <test-method status="PASS" signature="fecharNavegador()[pri:0, instance:br.com.sempreit.cenarios.Cenario4_Firefox@7d9d1a19]" name="fecharNavegador" is-config="true" duration-ms="3302" started-at="2021-10-14T12:17:41Z" finished-at="2021-10-14T12:17:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fecharNavegador -->
+      </class> <!-- br.com.sempreit.cenarios.Cenario4_Firefox -->
+      <class name="br.com.sempreit.cenarios.Cenario1_Edge">
+        <test-method status="PASS" signature="executorCenario()[pri:0, instance:br.com.sempreit.cenarios.Cenario1_Edge@4667ae56]" name="executorCenario" duration-ms="35045" started-at="2021-10-14T12:16:16Z" finished-at="2021-10-14T12:16:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- executorCenario -->
+        <test-method status="PASS" signature="fecharNavegador()[pri:0, instance:br.com.sempreit.cenarios.Cenario1_Edge@4667ae56]" name="fecharNavegador" is-config="true" duration-ms="435" started-at="2021-10-14T12:16:51Z" finished-at="2021-10-14T12:16:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fecharNavegador -->
+      </class> <!-- br.com.sempreit.cenarios.Cenario1_Edge -->
+      <class name="br.com.sempreit.cenarios.Cenario2_Chrome">
+        <test-method status="PASS" signature="executorCenario()[pri:0, instance:br.com.sempreit.cenarios.Cenario2_Chrome@5442a311]" name="executorCenario" duration-ms="24496" started-at="2021-10-14T12:16:16Z" finished-at="2021-10-14T12:16:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- executorCenario -->
+        <test-method status="PASS" signature="fecharNavegador()[pri:0, instance:br.com.sempreit.cenarios.Cenario2_Chrome@5442a311]" name="fecharNavegador" is-config="true" duration-ms="720" started-at="2021-10-14T12:16:40Z" finished-at="2021-10-14T12:16:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fecharNavegador -->
+      </class> <!-- br.com.sempreit.cenarios.Cenario2_Chrome -->
+      <class name="br.com.sempreit.cenarios.Cenario4_Chrome">
+        <test-method status="PASS" signature="executorCenario()[pri:0, instance:br.com.sempreit.cenarios.Cenario4_Chrome@1794d431]" name="executorCenario" duration-ms="18902" started-at="2021-10-14T12:17:12Z" finished-at="2021-10-14T12:17:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- executorCenario -->
+        <test-method status="PASS" signature="fecharNavegador()[pri:0, instance:br.com.sempreit.cenarios.Cenario4_Chrome@1794d431]" name="fecharNavegador" is-config="true" duration-ms="920" started-at="2021-10-14T12:17:31Z" finished-at="2021-10-14T12:17:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fecharNavegador -->
+      </class> <!-- br.com.sempreit.cenarios.Cenario4_Chrome -->
+      <class name="br.com.sempreit.cenarios.Cenario3_Chrome">
+        <test-method status="PASS" signature="executorCenario()[pri:0, instance:br.com.sempreit.cenarios.Cenario3_Chrome@42e26948]" name="executorCenario" duration-ms="20305" started-at="2021-10-14T12:16:51Z" finished-at="2021-10-14T12:17:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- executorCenario -->
+        <test-method status="PASS" signature="fecharNavegador()[pri:0, instance:br.com.sempreit.cenarios.Cenario3_Chrome@42e26948]" name="fecharNavegador" is-config="true" duration-ms="391" started-at="2021-10-14T12:17:12Z" finished-at="2021-10-14T12:17:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fecharNavegador -->
+      </class> <!-- br.com.sempreit.cenarios.Cenario3_Chrome -->
+      <class name="br.com.sempreit.cenarios.Cenario3_Edge">
+        <test-method status="PASS" signature="executorCenario()[pri:0, instance:br.com.sempreit.cenarios.Cenario3_Edge@1a968a59]" name="executorCenario" duration-ms="20660" started-at="2021-10-14T12:17:03Z" finished-at="2021-10-14T12:17:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- executorCenario -->
+        <test-method status="PASS" signature="fecharNavegador()[pri:0, instance:br.com.sempreit.cenarios.Cenario3_Edge@1a968a59]" name="fecharNavegador" is-config="true" duration-ms="441" started-at="2021-10-14T12:17:24Z" finished-at="2021-10-14T12:17:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fecharNavegador -->
+      </class> <!-- br.com.sempreit.cenarios.Cenario3_Edge -->
+      <class name="br.com.sempreit.cenarios.Cenario1_Chrome">
+        <test-method status="PASS" signature="executorCenario()[pri:0, instance:br.com.sempreit.cenarios.Cenario1_Chrome@548e7350]" name="executorCenario" duration-ms="24442" started-at="2021-10-14T12:16:16Z" finished-at="2021-10-14T12:16:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- executorCenario -->
+        <test-method status="PASS" signature="fecharNavegador()[pri:0, instance:br.com.sempreit.cenarios.Cenario1_Chrome@548e7350]" name="fecharNavegador" is-config="true" duration-ms="661" started-at="2021-10-14T12:16:40Z" finished-at="2021-10-14T12:16:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fecharNavegador -->
+      </class> <!-- br.com.sempreit.cenarios.Cenario1_Chrome -->
+      <class name="br.com.sempreit.cenarios.Cenario3_Firefox">
+        <test-method status="PASS" signature="executorCenario()[pri:0, instance:br.com.sempreit.cenarios.Cenario3_Firefox@4883b407]" name="executorCenario" duration-ms="30354" started-at="2021-10-14T12:16:57Z" finished-at="2021-10-14T12:17:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- executorCenario -->
+        <test-method status="PASS" signature="fecharNavegador()[pri:0, instance:br.com.sempreit.cenarios.Cenario3_Firefox@4883b407]" name="fecharNavegador" is-config="true" duration-ms="3596" started-at="2021-10-14T12:17:27Z" finished-at="2021-10-14T12:17:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fecharNavegador -->
+      </class> <!-- br.com.sempreit.cenarios.Cenario3_Firefox -->
+    </test> <!-- Smoke -->
+  </suite> <!-- Suite -->
+</testng-results>
