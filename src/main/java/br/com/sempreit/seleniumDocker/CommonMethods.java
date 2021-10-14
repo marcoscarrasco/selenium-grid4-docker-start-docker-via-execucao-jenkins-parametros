@@ -44,6 +44,7 @@ public class CommonMethods {
 		        System.out.println("EXECUCAO LINUX");
 		        System.out.println("CAMINHO: " + "cd " + path + " && " + command);			
 //		        p = Runtime.getRuntime().exec("cd " + path + " && " + command);
+		        System.out.println(p = Runtime.getRuntime().exec("pwd"));
 		        p = Runtime.getRuntime().exec("cd /var/lib/jenkins/workspace/execucao-grid4-docker-jenkins-com-parametros && docker-compose up");
 		        
 		        
