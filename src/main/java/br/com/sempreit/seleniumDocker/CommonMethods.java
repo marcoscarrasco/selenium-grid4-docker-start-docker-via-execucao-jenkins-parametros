@@ -49,7 +49,7 @@ public class CommonMethods {
         Process p;
         
         try {
-            p = Runtime.getRuntime().exec(command);
+            p = Runtime.getRuntime().exec("pwd");
             System.out.println("EXECUTOU COMANDO:" + command);
             BufferedReader br = new BufferedReader(
                 new InputStreamReader(p.getInputStream()));
