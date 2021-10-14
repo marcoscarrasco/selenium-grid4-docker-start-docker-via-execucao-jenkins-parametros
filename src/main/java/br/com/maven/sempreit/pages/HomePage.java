@@ -15,7 +15,7 @@ public class HomePage {
 		System.out.println("Acessando url .....");
 		driver.get("https://www.google.com.br");
 		System.out.println("Get da url realizado!!!");
-		assertEquals(driver.getTitle(), "qwqwddsdsdsdsddddsssddddssssqwqwq");
+		assertEquals(driver.getTitle(), "qwqwddsdsdsdsddddsssasasasasassddddssssqwqwq");
 //		Thread.sleep(5000); // slep apenas para testar comportamento ao startar v�rios navegadores
 		System.out.println("Acessou o google");
 		
