@@ -49,7 +49,7 @@ public class CommonMethods {
         Process p;
         
         try {
-            p = Runtime.getRuntime().exec("docker-compose up");
+            p = Runtime.getRuntime().exec("docker");
             BufferedReader br = new BufferedReader(
                 new InputStreamReader(p.getInputStream()));
             while ((s = br.readLine()) != null)
