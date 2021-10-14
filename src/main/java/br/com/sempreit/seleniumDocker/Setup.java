@@ -41,7 +41,7 @@ public class Setup {
 	public void setupFirefox() throws MalformedURLException, InterruptedException {
 		
 		FirefoxOptions cap = new FirefoxOptions();
-		driver = new RemoteWebDriver(new URL(" http://localhost:4444"),cap);
+		driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"),cap);
 		
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
