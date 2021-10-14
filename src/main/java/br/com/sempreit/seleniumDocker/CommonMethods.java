@@ -49,11 +49,18 @@ public class CommonMethods {
 				System.out.println("Esperando 30 segundos !!!!!!!!");
 				Thread.sleep(30000);
 				System.out.println("Terminou a espera!!!!!!!!");
+				
+				while (true) {
+					System.out.println("TESTETSTETSTETTSTE");
+					System.out.println(scanner.nextLine());
+				}
+					
 			}
 			
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		
+
 	}
+	
 }
