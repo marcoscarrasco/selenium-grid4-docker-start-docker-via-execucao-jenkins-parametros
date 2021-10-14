@@ -50,7 +50,6 @@ public class CommonMethods {
         
         try {
             p = Runtime.getRuntime().exec("pwd");
-            System.out.println("EXECUTOU COMANDO:" + command);
             BufferedReader br = new BufferedReader(
                 new InputStreamReader(p.getInputStream()));
             while ((s = br.readLine()) != null)
