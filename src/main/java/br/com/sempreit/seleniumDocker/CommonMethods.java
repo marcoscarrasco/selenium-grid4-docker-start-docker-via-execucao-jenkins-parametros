@@ -45,6 +45,7 @@ public class CommonMethods {
 //		        p = Runtime.getRuntime().exec("cd " + path + " && " + command);
 		        p = Runtime.getRuntime().exec("pwd");
 		        System.out.println(p.toString());
+		        p = Runtime.getRuntime().exec("docker-compose up");
 //		        p = Runtime.getRuntime().exec("cd /var/lib/jenkins/workspace/execucao-grid4-docker-jenkins-com-parametros && docker-compose up");
 		        
 		        
