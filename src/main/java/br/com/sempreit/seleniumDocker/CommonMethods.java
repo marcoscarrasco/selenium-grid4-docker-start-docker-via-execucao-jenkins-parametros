@@ -11,7 +11,6 @@ public class CommonMethods {
 	{
 		try {
 			
-			Scanner scanner = null;
 			String os = System.getProperty("os.name");
 			String path = System.getProperty("user.dir");
 			ProcessBuilder builder = null;
@@ -37,23 +36,28 @@ public class CommonMethods {
 						break; 
 					}
 				}	
+			
 			}else {
-				System.out.println("TESTE NO LINUX!!!!!!!!!!!!!!!");
-				System.out.println("path:" + path);
-				System.out.println("command:" + command);
-				System.out.println("cd " + path + " && " + command);
-				System.out.println(System.getProperty("user.dir"));
 				
-				scanner = new Scanner(Runtime.getRuntime().exec(new String[] {"/bin/bash", "-l", "-c", "cd " + path + " && " + command}).getInputStream());
-				
-				System.out.println("Esperando 30 segundos !!!!!!!!");
-				Thread.sleep(30000);
-				System.out.println("Terminou a espera!!!!!!!!");
-				
-				while (true) {
-					System.out.println("TESTETSTETSTETTSTE");
-					System.out.println(scanner.nextLine());
-				}
+				String s;
+		        Process p;
+		        
+		        System.out.println("EXECUCAO LINUX");
+		        System.out.println("CAMINHO: " + "cd" + path + " && " + command);			
+		        p = Runtime.getRuntime().exec("cd" + path + " && " + command);
+		        
+		        
+	            BufferedReader br = new BufferedReader(
+	                new InputStreamReader(p.getInputStream()));
+	            while ((s = br.readLine()) != null)
+	                System.out.println("line: " + s);
+	            p.waitFor();
+	            System.out.println ("exit: " + p.exitValue());
+	            p.destroy();
+	            
+	            System.out.println("ESPERANDO .........30 SEGUNDOS");
+	            Thread.sleep(30000);
+	            System.out.println("TERMINOU .........30 SEGUNDOS");
 					
 			}
 			
