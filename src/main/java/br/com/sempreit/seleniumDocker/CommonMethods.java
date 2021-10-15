@@ -9,57 +9,45 @@ public class CommonMethods {
 	public static void runTerminalCommand(String command)
 	{
 		
-//		try {
-//			
-//			String os = System.getProperty("os.name");
-//			String path = System.getProperty("user.dir");
-//			
-//			if(os.startsWith("Windows")) {
-//				ProcessBuilder builder = new ProcessBuilder("cmd.exe", "/c", "cd \""+path+"\" && "+command);
-//				builder.redirectErrorStream(true);
-//				Process p = builder.start();
-//				BufferedReader r = new BufferedReader(new InputStreamReader(p.getInputStream()));
-//				String line;
-//				while (true) {
-//					line = r.readLine();
-//					/*quando encontrar "Registered a node" (Grid 3) ou 
-//					"Node has been added" (Grid4), entende que os containers subiram. Quando encontrar
-//					"Removing selenium-hub", entende que o container n�o est� mais em execu��o*/
-//					if (line.contains("Registered a node") || line.contains("Node has been added")) { 
-//						Thread.sleep(5000);
-//						System.out.println("Containers inicializados: " + line);
-//						break; 
-//					}else if (line.contains("Removing selenium-hub")){
-//						Thread.sleep(5000);
-//						System.out.println("Containers n�o est�o mais em execu��o: " + line);
-//						break; 
-//					}
-//				}	
-//			
-//			}else {
-//					
-//			}
-//			
-//		} catch (Exception e) {
-//			e.printStackTrace();
-//		}
-		
-
-		String s;
-        Process p;
-        
-        try {
-            p = Runtime.getRuntime().exec("docker-compose up");
-            BufferedReader br = new BufferedReader(
-                new InputStreamReader(p.getInputStream()));
-            while ((s = br.readLine()) != null)
-                System.out.println("line: " + s);
-            p.waitFor();
-            System.out.println ("exit: " + p.exitValue());
-            p.destroy();
-            
-        } catch (Exception e) {}
-		
+		try {
+			
+			String os = System.getProperty("os.name");
+			String path = System.getProperty("user.dir");
+			
+			ProcessBuilder builder = null;
+			
+			if(os.startsWith("Windows")) {
+				System.out.println("Execução via terminal Windows");
+				builder = new ProcessBuilder("cmd.exe", "/c", "cd \""+path+"\" && "+command);
+			}else {
+				System.out.println("Execução via terminal: " + os.toString());
+				builder = new ProcessBuilder("/bin/bash", "-l", "-c", "cd \""+path+"\" && "+command);	
+			}
+			
+			builder.redirectErrorStream(true);
+			Process p = builder.start();
+			BufferedReader r = new BufferedReader(new InputStreamReader(p.getInputStream()));
+			String line;
+			while (true) {
+				line = r.readLine();
+				/*quando encontrar "Registered a node" (Grid 3) ou 
+				"from DOWN to UP" (Grid4), entende que os containers subiram. Quando encontrar
+				"Removing selenium-hub", entende que os containers não estão mais em execução*/
+				if (line.contains("Registered a node") || line.contains("from DOWN to UP")) { 
+					Thread.sleep(10000);
+					System.out.println("Containers inicializados: " + line);
+					break; 
+				}else if (line.contains("Removing selenium-hub")){
+					Thread.sleep(10000);
+					System.out.println("Containers não estão mais em execução: " + line);
+					break; 
+				}
+			}
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	
 	}
 	
 }
