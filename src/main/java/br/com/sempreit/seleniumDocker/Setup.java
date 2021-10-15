@@ -34,7 +34,7 @@ public class Setup {
 		
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
-		System.out.println("Solicitado navegador Chrome");
+		System.out.println("Solicitado navegador Chrome.");
 		
 	}
 	
@@ -45,7 +45,7 @@ public class Setup {
 		
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
-		System.out.println("Solicitado navegador Firefox");
+		System.out.println("Solicitado navegador Firefox.");
 		
 	}
 	
@@ -56,7 +56,7 @@ public class Setup {
 		
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
-		System.out.println("Solicitado navegador Opera");
+		System.out.println("Solicitado navegador Opera.");
 		
 	}
 	
@@ -67,7 +67,7 @@ public class Setup {
 		
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
-		System.out.println("Solicitado navegador Opera");
+		System.out.println("Solicitado navegador Edge.");
 		
 	}
 	
