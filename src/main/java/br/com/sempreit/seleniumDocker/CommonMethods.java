@@ -40,7 +40,7 @@ public class CommonMethods {
 					break; 
 				}else if (line.contains("Removing selenium-hub")){
 					Thread.sleep(10000);
-					System.out.println("Containers não estão mais em execução : " + line);
+					System.out.println("Containers não estão mais em execução: " + line);
 					break; 
 				}
 			}
