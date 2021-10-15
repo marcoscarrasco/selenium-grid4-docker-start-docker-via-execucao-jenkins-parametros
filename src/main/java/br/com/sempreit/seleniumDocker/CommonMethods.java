@@ -30,6 +30,7 @@ public class CommonMethods {
 			String line;
 			while (true) {
 				line = r.readLine();
+				System.out.println("LOGS: " + line);
 				/*quando encontrar "Registered a node" (Grid 3) ou 
 				"from DOWN to UP" (Grid4), entende que os containers subiram. Quando encontrar
 				"Removing selenium-hub", entende que os containers não estão mais em execução*/
