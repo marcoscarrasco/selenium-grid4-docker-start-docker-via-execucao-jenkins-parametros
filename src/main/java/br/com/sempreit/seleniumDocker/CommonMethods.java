@@ -21,7 +21,7 @@ public class CommonMethods {
 				builder = new ProcessBuilder("cmd.exe", "/c", "cd \""+path+"\" && "+command);
 			}else {
 				System.out.println("Execução via terminal: " + os.toString());
-				builder = new ProcessBuilder("/bin/bash", "-l", "-c", "cd "+path+ " && " +command);	
+				builder = new ProcessBuilder("/bin/bash", "-l", "-c", command);
 			}
 			
 			builder.redirectErrorStream(true);
