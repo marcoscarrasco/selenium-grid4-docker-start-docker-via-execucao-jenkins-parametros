@@ -24,7 +24,7 @@ public class Setup {
 	@BeforeSuite
 	public void startContainer()
 	{
-		CommonMethods.runTerminalCommand("docker-compose docker-compose.yml up");
+		CommonMethods.runTerminalCommand("docker-compose -f docker-compose.yml up");
 	}
 	
 	public void setupChome() throws MalformedURLException, InterruptedException {
