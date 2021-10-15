@@ -21,7 +21,7 @@ public class CommonMethods {
 				builder = new ProcessBuilder("cmd.exe", "/c", "cd \""+path+"\" && "+command);
 			}else {
 				System.out.println("Execução via terminal: " + os.toString());
-				builder = new ProcessBuilder("/bin/bash", "-l", "-c", "cd "+path+"\" && "+command);	
+				builder = new ProcessBuilder("/bin/bash", "-l", "-c", "cd "+path+ " && " +command);	
 			}
 			
 			builder.redirectErrorStream(true);
@@ -50,4 +50,7 @@ public class CommonMethods {
 	
 	}
 	
+	public static void main(String[] args) {
+		runTerminalCommand("docker-compose up");
+	}
 }
